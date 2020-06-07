@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Desktop/proj/final
+CMAKE_SOURCE_DIR = /home/pi/Desktop/Ten-Pin-Bowling-Imaging
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Desktop/proj/final/release
+CMAKE_BINARY_DIR = /home/pi/Desktop/Ten-Pin-Bowling-Imaging/release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/proj/final/release/CMakeFiles /home/pi/Desktop/proj/final/release/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Ten-Pin-Bowling-Imaging/release/CMakeFiles /home/pi/Desktop/Ten-Pin-Bowling-Imaging/release/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/proj/final/release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Ten-Pin-Bowling-Imaging/release/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -163,32 +163,32 @@ calib.cpp.s:
 	$(MAKE) -f CMakeFiles/calib.dir/build.make CMakeFiles/calib.dir/calib.cpp.s
 .PHONY : calib.cpp.s
 
-pinstats2.o: pinstats2.cpp.o
+pinstats.o: pinstats.cpp.o
 
-.PHONY : pinstats2.o
+.PHONY : pinstats.o
 
 # target to build an object file
-pinstats2.cpp.o:
-	$(MAKE) -f CMakeFiles/pinstats.dir/build.make CMakeFiles/pinstats.dir/pinstats2.cpp.o
-.PHONY : pinstats2.cpp.o
+pinstats.cpp.o:
+	$(MAKE) -f CMakeFiles/pinstats.dir/build.make CMakeFiles/pinstats.dir/pinstats.cpp.o
+.PHONY : pinstats.cpp.o
 
-pinstats2.i: pinstats2.cpp.i
+pinstats.i: pinstats.cpp.i
 
-.PHONY : pinstats2.i
+.PHONY : pinstats.i
 
 # target to preprocess a source file
-pinstats2.cpp.i:
-	$(MAKE) -f CMakeFiles/pinstats.dir/build.make CMakeFiles/pinstats.dir/pinstats2.cpp.i
-.PHONY : pinstats2.cpp.i
+pinstats.cpp.i:
+	$(MAKE) -f CMakeFiles/pinstats.dir/build.make CMakeFiles/pinstats.dir/pinstats.cpp.i
+.PHONY : pinstats.cpp.i
 
-pinstats2.s: pinstats2.cpp.s
+pinstats.s: pinstats.cpp.s
 
-.PHONY : pinstats2.s
+.PHONY : pinstats.s
 
 # target to generate assembly for a file
-pinstats2.cpp.s:
-	$(MAKE) -f CMakeFiles/pinstats.dir/build.make CMakeFiles/pinstats.dir/pinstats2.cpp.s
-.PHONY : pinstats2.cpp.s
+pinstats.cpp.s:
+	$(MAKE) -f CMakeFiles/pinstats.dir/build.make CMakeFiles/pinstats.dir/pinstats.cpp.s
+.PHONY : pinstats.cpp.s
 
 # Help Target
 help:
@@ -203,9 +203,9 @@ help:
 	@echo "... calib.o"
 	@echo "... calib.i"
 	@echo "... calib.s"
-	@echo "... pinstats2.o"
-	@echo "... pinstats2.i"
-	@echo "... pinstats2.s"
+	@echo "... pinstats.o"
+	@echo "... pinstats.i"
+	@echo "... pinstats.s"
 .PHONY : help
 
 

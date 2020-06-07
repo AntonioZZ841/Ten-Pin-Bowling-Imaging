@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pi/Desktop/proj/final/calib.cpp" "/home/pi/Desktop/proj/final/release/CMakeFiles/calib.dir/calib.cpp.o"
+  "/home/pi/Desktop/Ten-Pin-Bowling-Imaging/calib.cpp" "/home/pi/Desktop/Ten-Pin-Bowling-Imaging/release/CMakeFiles/calib.dir/calib.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/opt/opencv-4.1.0/include/opencv4"
+  "/usr/local/include/opencv4"
   )
 
 # Targets to which this target links.

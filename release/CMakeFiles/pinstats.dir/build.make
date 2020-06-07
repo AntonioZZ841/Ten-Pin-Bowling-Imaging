@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Desktop/proj/final
+CMAKE_SOURCE_DIR = /home/pi/Desktop/Ten-Pin-Bowling-Imaging
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Desktop/proj/final/release
+CMAKE_BINARY_DIR = /home/pi/Desktop/Ten-Pin-Bowling-Imaging/release
 
 # Include any dependencies generated for this target.
 include CMakeFiles/pinstats.dir/depend.make
@@ -57,77 +57,82 @@ include CMakeFiles/pinstats.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/pinstats.dir/flags.make
 
-CMakeFiles/pinstats.dir/pinstats2.cpp.o: CMakeFiles/pinstats.dir/flags.make
-CMakeFiles/pinstats.dir/pinstats2.cpp.o: ../pinstats2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/proj/final/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pinstats.dir/pinstats2.cpp.o"
-	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pinstats.dir/pinstats2.cpp.o -c /home/pi/Desktop/proj/final/pinstats2.cpp
+CMakeFiles/pinstats.dir/pinstats.cpp.o: CMakeFiles/pinstats.dir/flags.make
+CMakeFiles/pinstats.dir/pinstats.cpp.o: ../pinstats.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/Ten-Pin-Bowling-Imaging/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pinstats.dir/pinstats.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pinstats.dir/pinstats.cpp.o -c /home/pi/Desktop/Ten-Pin-Bowling-Imaging/pinstats.cpp
 
-CMakeFiles/pinstats.dir/pinstats2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pinstats.dir/pinstats2.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/proj/final/pinstats2.cpp > CMakeFiles/pinstats.dir/pinstats2.cpp.i
+CMakeFiles/pinstats.dir/pinstats.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pinstats.dir/pinstats.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/Ten-Pin-Bowling-Imaging/pinstats.cpp > CMakeFiles/pinstats.dir/pinstats.cpp.i
 
-CMakeFiles/pinstats.dir/pinstats2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pinstats.dir/pinstats2.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/proj/final/pinstats2.cpp -o CMakeFiles/pinstats.dir/pinstats2.cpp.s
+CMakeFiles/pinstats.dir/pinstats.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pinstats.dir/pinstats.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/Ten-Pin-Bowling-Imaging/pinstats.cpp -o CMakeFiles/pinstats.dir/pinstats.cpp.s
 
 # Object files for target pinstats
 pinstats_OBJECTS = \
-"CMakeFiles/pinstats.dir/pinstats2.cpp.o"
+"CMakeFiles/pinstats.dir/pinstats.cpp.o"
 
 # External object files for target pinstats
 pinstats_EXTERNAL_OBJECTS =
 
-pinstats: CMakeFiles/pinstats.dir/pinstats2.cpp.o
+pinstats: CMakeFiles/pinstats.dir/pinstats.cpp.o
 pinstats: CMakeFiles/pinstats.dir/build.make
-pinstats: /opt/opencv-4.1.0/lib/libopencv_gapi.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_stitching.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_aruco.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_bgsegm.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_bioinspired.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_ccalib.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_dnn_objdetect.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_dpm.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_face.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_freetype.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_fuzzy.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_hfs.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_img_hash.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_line_descriptor.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_quality.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_reg.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_rgbd.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_saliency.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_stereo.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_structured_light.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_superres.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_surface_matching.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_tracking.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_videostab.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_xfeatures2d.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_xobjdetect.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_xphoto.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_shape.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_datasets.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_plot.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_text.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_dnn.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_ml.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_phase_unwrapping.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_optflow.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_ximgproc.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_video.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_objdetect.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_calib3d.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_features2d.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_flann.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_highgui.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_videoio.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_imgcodecs.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_photo.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_imgproc.so.4.1.0
-pinstats: /opt/opencv-4.1.0/lib/libopencv_core.so.4.1.0
+pinstats: /usr/local/lib/libopencv_calib3d.a
+pinstats: /usr/local/lib/libopencv_core.a
+pinstats: /usr/local/lib/libopencv_dnn.a
+pinstats: /usr/local/lib/libopencv_features2d.a
+pinstats: /usr/local/lib/libopencv_flann.a
+pinstats: /usr/local/lib/libopencv_gapi.a
+pinstats: /usr/local/lib/libopencv_highgui.a
+pinstats: /usr/local/lib/libopencv_imgcodecs.a
+pinstats: /usr/local/lib/libopencv_imgproc.a
+pinstats: /usr/local/lib/libopencv_ml.a
+pinstats: /usr/local/lib/libopencv_objdetect.a
+pinstats: /usr/local/lib/libopencv_photo.a
+pinstats: /usr/local/lib/libopencv_stitching.a
+pinstats: /usr/local/lib/libopencv_video.a
+pinstats: /usr/local/lib/libopencv_videoio.a
+pinstats: /usr/local/lib/opencv4/3rdparty/liblibprotobuf.a
+pinstats: /usr/local/lib/opencv4/3rdparty/libade.a
+pinstats: /usr/local/lib/libopencv_imgcodecs.a
+pinstats: /usr/local/lib/opencv4/3rdparty/liblibwebp.a
+pinstats: /usr/lib/arm-linux-gnueabihf/libjpeg.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libpng.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libtiff.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libjasper.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libjpeg.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libpng.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libtiff.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libjasper.so
+pinstats: /usr/local/lib/opencv4/3rdparty/libIlmImf.a
+pinstats: /usr/lib/arm-linux-gnueabihf/libavcodec.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libavformat.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libavutil.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libswscale.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libgtk-3.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libgdk-3.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libpangocairo-1.0.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libpango-1.0.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libatk-1.0.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libcairo-gobject.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libcairo.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libgdk_pixbuf-2.0.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libgio-2.0.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libgobject-2.0.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libglib-2.0.so
+pinstats: /usr/lib/arm-linux-gnueabihf/libgthread-2.0.so
+pinstats: /usr/local/lib/opencv4/3rdparty/libquirc.a
+pinstats: /usr/local/lib/libopencv_calib3d.a
+pinstats: /usr/local/lib/libopencv_features2d.a
+pinstats: /usr/local/lib/libopencv_flann.a
+pinstats: /usr/local/lib/libopencv_imgproc.a
+pinstats: /usr/local/lib/libopencv_core.a
+pinstats: /usr/lib/arm-linux-gnueabihf/libz.so
+pinstats: /usr/local/lib/opencv4/3rdparty/libittnotify.a
 pinstats: CMakeFiles/pinstats.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/Desktop/proj/final/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable pinstats"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/Desktop/Ten-Pin-Bowling-Imaging/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable pinstats"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pinstats.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -140,6 +145,6 @@ CMakeFiles/pinstats.dir/clean:
 .PHONY : CMakeFiles/pinstats.dir/clean
 
 CMakeFiles/pinstats.dir/depend:
-	cd /home/pi/Desktop/proj/final/release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Desktop/proj/final /home/pi/Desktop/proj/final /home/pi/Desktop/proj/final/release /home/pi/Desktop/proj/final/release /home/pi/Desktop/proj/final/release/CMakeFiles/pinstats.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/Desktop/Ten-Pin-Bowling-Imaging/release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Desktop/Ten-Pin-Bowling-Imaging /home/pi/Desktop/Ten-Pin-Bowling-Imaging /home/pi/Desktop/Ten-Pin-Bowling-Imaging/release /home/pi/Desktop/Ten-Pin-Bowling-Imaging/release /home/pi/Desktop/Ten-Pin-Bowling-Imaging/release/CMakeFiles/pinstats.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pinstats.dir/depend
 

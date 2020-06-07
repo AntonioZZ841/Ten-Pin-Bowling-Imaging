@@ -1,4 +1,6 @@
 #include <opencv2/opencv.hpp>
+#include <fstream>
+
 #define THRESHOLD 160
 
 bool isWhite(cv::Mat& image, int row, int col)
