@@ -1,0 +1,4 @@
+/home/pi/Desktop/Ten-Pin-Bowling-Imaging/release/CMakeFiles/rebuild_cache.dir
+/home/pi/Desktop/Ten-Pin-Bowling-Imaging/release/CMakeFiles/edit_cache.dir
+/home/pi/Desktop/Ten-Pin-Bowling-Imaging/release/CMakeFiles/pinstats.dir
+/home/pi/Desktop/Ten-Pin-Bowling-Imaging/release/CMakeFiles/calib.dir
