@@ -31,7 +31,7 @@ int main()
             pin_i[9] = isWhite(im, 359, 421);
         printStatus(pin_i);
 	system("python3 SendReceive.py");
-        sleep(10);                                   //pauses for 5 secs
+        sleep(15);                                   //pauses for 15 secs
     }
     return 0;
 }
