@@ -1,5 +1,5 @@
 # Ten-Pin-Bowling-Imaging
-This project aims to provide binary tools for detection of bowling pins after a strke.  
+This project aims to provide binary tools for detection of bowling pins after a roll.  
 The Core codes are realised based on **OpenCV 4.3.0** and **C++**.  
 The executives can be built via **CMake** and **make** by the following commands:
 
